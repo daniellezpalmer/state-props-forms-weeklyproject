@@ -44,7 +44,8 @@ export default class PlayList extends Component {
 
     return (
       <div>
-        <button style={btnStyle} onClick={this.fetchData}>Update</button>
+        <button style={btnStyle} onClick={this.fetchData}>Update</button><br></br>
+        Previously Added Songs!
         <PlayListItem arr={this.state.songs}/>
       </div>
     )
