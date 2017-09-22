@@ -1,16 +1,25 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, {Component} from 'react';
+import '../styles/App.css';
 import NavBar from './NavBar.js';
 import PlayList from './PlayList.js';
-import PlayListItem from './PlayListItem.js';
+import PlayListForm from './PlayListForm.js';
 
 class App extends Component {
   render() {
+
+    let wholeShebang = {
+      fontFamily:"Amatic SC",
+      fontSize: 40,
+      color:"lavender",
+      backgroundColor:"#4e5157",
+      padding: 20
+    }
+
     return (
-      <div className="App">
-        <NavBar />
-        <PlayList />
-        <PlayListForm />
+      <div className="App" style={wholeShebang}>
+        <NavBar/>
+        <PlayList/>
+        <PlayListForm/>
       </div>
     );
   }
